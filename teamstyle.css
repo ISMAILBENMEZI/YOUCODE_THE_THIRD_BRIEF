@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Rowdies", sans-serif;
+}
+
+body {
+  background: linear-gradient(360deg, #050509 0%, #412c61 50%, #070509 100%);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 5px solid #270529;
+}
+
+.title h1 {
+  background: linear-gradient(
+    90deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.Nav_List {
+  display: flex;
+  gap: 50px;
+}
+
+.nav_links {
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Nav_List .nav_links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 2px;
+  z-index: -1;
+  animation: moveLink 3s linear infinite;
+  background-size: 400% 400%;
+  transition: filter 0.3s ease;
+}
+
+@keyframes moveLink {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.Nav_List .nav_links:hover::before {
+  filter: blur(1.5rem);
+}
+
+.Nav_List a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.banner-pic{
+    width: 1100px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-left: 80px;
+    box-shadow: 0px 0px 10px 8px black;
+
+}
+.player-card{
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 150px;
+    
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-gap: 23px;
+
+    
+    
+}
+.player-pic{
+    /* padding-top:10px ; */
+    width: 200px;
+    height:260px ;
+    filter: drop-shadow(0px 0px 15px  rgb(0, 0, 0));
+}
+.player-pic:hover{
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.player-name{
+  font-size: 25px;
+    margin-left: 75px;
+    color: white;
+    
+}
+.linee{
+  height: 2px;
+  background-color: #484848;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.our-teams{
+  margin-top: 80px;
+  margin-bottom: 150px;
+  padding-left: 100px;
+
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows:150px 500px ;
+
+}
+.teams-tt{
+  grid-column: 1 / 4;
+  padding-left:350px ;
+  font-size: 80px;
+  color: white;
+
+}
+.teams-pic{
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 4px;
+
+}
+.teams-pic:hover{
+  transform: translateY(-20px);
+  transition: 0.5s;
+
+}
+.our-products{
+  margin-top: 80px;
+  margin-bottom: 150px;
+  padding-left: 40px;
+
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows:150px 500px ;
+
+}
+.shopp{
+  margin-left: 170px ;
+  grid-column: 1 / 4;
+  padding-left:350px ;
+  font-size: 80px;
+  color: white;
+}
+.shop-image{
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 15px  rgb(0, 0, 0));
+
+}
+.shop-image:hover{
+  transform: translateY(-30px);
+  transition: 0.5s;
+
+}
