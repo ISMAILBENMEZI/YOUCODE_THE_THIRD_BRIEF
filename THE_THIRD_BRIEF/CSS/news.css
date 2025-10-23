@@ -1,0 +1,241 @@
+/* start body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Rowdies", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #050509 0%, #412c61 50%, #070509 100%);
+}
+.prinsipal{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.prinsipal img{
+    width: auto;
+    height: auto;
+}
+
+.logo_gaming{
+    text-align: absolute;
+    color: rgb(225, 206, 160);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.Team_h{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0;
+}
+p{
+    color: #BD9BF0;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.Team{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* end Body */
+
+
+/* start navbar */
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 5px solid #270529;
+}
+
+.title h1 {
+  background: linear-gradient(
+    90deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.Nav_List {
+  display: flex;
+  gap: 50px;
+}
+
+.nav_links {
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Nav_List .nav_links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 2px;
+  z-index: -1;
+  animation: moveLink 3s linear infinite;
+  background-size: 400% 400%;
+  transition: filter 0.3s ease;
+}
+
+@keyframes moveLink {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.Nav_List .nav_links:hover::before {
+  filter: blur(1.5rem);
+}
+
+.Nav_List a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+/* end navbar */
+/* start footer */
+.footer {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 5px solid #270529;
+}
+
+.title h1 {
+  background: linear-gradient(
+    90deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.footer_List {
+  display: flex;
+  gap: 50px;
+}
+
+.footer_links {
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.footer_List .footer_links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 2px;
+  z-index: -1;
+  animation: moveLink 3s linear infinite;
+  background-size: 400% 400%;
+  transition: filter 0.3s ease;
+}
+
+@keyframes moveLink {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.footer_List .fouter_links:hover::before {
+  filter: blur(1.5rem);
+}
+
+.footer_List a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+
+
+.footer_List¨
+{
+    color: red;
+    border-radius: 10px;
+
+}
+/* end footer */
