@@ -116,7 +116,7 @@ body {
     margin-left: 80px;
     margin-right: 80px;
     margin-bottom: 150px;
-    
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 200px);
     grid-gap: 23px;
@@ -150,7 +150,7 @@ body {
   margin-top: 80px;
   margin-bottom: 150px;
   padding-left: 100px;
-
+  /* width: 100%; */
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows:150px 500px 78px ;
@@ -320,4 +320,183 @@ transform: translateY(-10px);
   transition: 0.3s;
   opacity: 100%;
 
+}
+.join-us{
+margin-top: 80px;
+/* width: 100%; */
+}
+.join-us-h{
+  padding-left:530px ;
+  font-size: 80px;
+  color: white;
+
+}
+.join-us-email{
+  background-color: #0D0D0D;
+  
+  margin-top: 50px;
+  margin-left: 330px;
+  margin-bottom: 150px;
+  border: solid;
+  border-color: #0D0D0D;
+  border-radius: 10px;
+  width: 650px;
+  height: 150px;
+}
+.email{
+  width: 350px;
+  height: 40px;
+  margin-left: 110px;
+  background-color: #2F2F2F;
+  border-radius: 10px;
+}
+.submit{
+  height: 40px;
+  width: 80px;
+  color: white;
+  background-color: #654597;
+  border-radius: 10px;
+  
+}
+.login{
+  margin-top: 29px;
+  color: #654597 ;
+  margin-left: 110px;
+}
+@media(max-width: 768px){
+ 
+.banner-pic{
+  width: 650px;
+  height: 300px;
+  margin-left: 42px;
+  
+}
+
+.player-card{
+  display: grid;
+    grid-template-columns: repeat(5, 300px);
+  margin-left : -5px;
+  overflow-x: hidden;
+
+}
+.player-pic{
+    /* padding-top:10px ; */
+    width: 300px;
+    height:380px ;}
+.our-teams{
+  margin-left: -250px;
+  overflow-x: hidden;
+  column-gap: -30px;
+
+}
+/* .teams-tt{
+  margin-left: -140px;
+  font-size: 60px;
+} */
+.our-products{
+   margin-left: -250px;
+  overflow-x: hidden;
+}
+.shopp{
+  font-size: 60px;
+}
+.join-us{
+  margin-left: -250px;
+}
+.join-us-h{
+  font-size: 60px;
+}
+}
+@media(max-width: 480px){
+  .banner-pic{
+  width: 430px;
+  height: 150px;
+  margin-left: 15px;
+  
+}
+
+.player-card{
+  display: grid;
+    grid-template-columns: repeat(5, 150px);
+  margin-left : -5px;
+  overflow-x: hidden;
+  margin-bottom: 80px;
+
+}
+.player-pic{
+    /* padding-top:10px ; */
+    width: 150px;
+    height:200px ;
+    margin-left: -100px;
+  }
+  .our-teams{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows:150px 350px 78px ;
+    margin-bottom: 80px;
+    overflow-x: hidden;
+      /* margin-left: 0px; */
+
+  }
+  .teams-pic{
+    width: 200px;
+    height: 300px;
+  }
+  .teams-tt{
+    padding-left: 280px;
+    font-size: 40px;
+  }
+  .info1{
+    padding-left: 60px;
+    width: 200px;
+  }
+  .info2{
+    padding-left: 60px;
+    width: 200px;
+  }
+  .info2{
+    width: 200px;
+    padding-left: 60px;
+  }
+  .our-products{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows:150px 300px 78px ;
+     margin-bottom: 80px;
+    overflow-x: hidden;
+
+  }
+  .shop-image{
+    width: 200px;
+    height: 250px;
+
+  }
+  .shopp{
+    padding-left: 200px;
+    font-size: 40px;
+  }
+  .add1{
+    width: 200px;
+    padding-left: 60px;
+  }
+  .add2{
+    width: 200px;
+    padding-left: 60px;
+  }
+  .add3{
+    width: 200px;
+    padding-left: 60px;
+  }
+  .join-us-h{
+    padding-left: 400px;
+    font-size: 40px;
+  }
+  .join-us-email{
+    margin-left: 285px;
+    width: 400px;
+  }
+  .email{
+    margin-left: 50px;
+    width: 220px;
+  }
 }
