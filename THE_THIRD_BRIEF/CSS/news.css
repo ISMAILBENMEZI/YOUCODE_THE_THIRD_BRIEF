@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: linear-gradient(90deg, #050509 0%, #412c61 50%, #070509 100%);
+  background: linear-gradient(360deg, #050509 0%, #412c61 50%, #070509 100%);
 }
 .prinsipal{
     width: auto;
@@ -19,44 +19,88 @@ body {
     text-align: center;
 }
 .prinsipal img{
-    width: auto;
+    width: 100%;
     height: auto;
+}
+@media  (min-width:1200px){
+  .prinsipal img{
+    height: 100vh;
+    object-fit: fill;
+  }
+}
+.title{
+  color: #d2dabf;
+  font-size: small;
+  margin-left: 10px;
+}
+.Text{
+    color: #BD9BF0;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 90%;
+}
+.section{
+
+  justify-content: space-around;
+}
+.vedeo img{
+  width: 90%;
+  border-radius: 10px;
+  border: #270529 solid 5px;
+  margin-left: 4%;
 }
 
-.logo_gaming{
-    text-align: absolute;
-    color: rgb(225, 206, 160);
+.valorent{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.valorent img{
+  width: 100%;
+  border-radius: 30px;
+}
+.p_vedeo{
+  font-size: 9px;
+  color: rgb(79, 144, 200);
+}
+.team img{
+  margin-top: 5%;
+  border-top: #81bacd solid 4px;
+  width: 100%;
+}
+@media  (min-width:768px){
+  .title{
+    font-size: large;
+  }
+  .Text{
+    font-size: 15px;
+  }
+  .valorent img{
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 30px;
+  width: 350px;
 }
-.Team_h{
-    width: auto;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0;
 }
-p{
-    color: #BD9BF0;
-    font-size: 20px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-}
-.logo{
-    width: 100px;
-    height: 100px;
-}
-.Team{
+@media  (min-width:1200px){
+  .title{
+    font-size: 30px;
+  }
+  .Text{
+    font-size: 25px;
+  }
+  .valorent img{
+  width: 350px;
+  }
+
+  .section{
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+  }
 }
+
 /* end Body */
 
 
 /* start navbar */
+
 .nav {
   position: fixed;
   width: 100%;
