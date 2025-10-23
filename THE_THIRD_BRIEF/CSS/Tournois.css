@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Rowdies", sans-serif;
+}
+
+body {
+  background: linear-gradient(360deg, #050509 0%, #412c61 50%, #070509 100%);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #270529;
+}
+
+/* .title h1 {
+  background: linear-gradient(
+    90deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+.Nav_List {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.nav_links {
+  background: #000000;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.Nav_List .nav_links::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    #574ae2 0%,
+    #222a68 25%,
+    #654597 50%,
+    #ab81cd 75%,
+    #e2adf2 100%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 2px;
+  z-index: -1;
+  animation: moveLink 3s linear infinite;
+  background-size: 400% 400%;
+  transition: filter 0.3s ease;
+}
+.Nav_List .nav_links:hover::before {
+  filter: blur(1.5rem);
+}
+.Nav_List a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+aside {
+  width: 15%;
+  padding: 0 5px;
+}
+main {
+  width: 85%;
+  padding: 0 5px;
+}
+main p {
+  font-size: 0.5rem;
+  font-weight: lighter;
+  color: #f8dcdc;
+}
+
+.section {
+  display: flex;
+  color: rgb(136, 4, 201);
+}
+
+.section h1 {
+  font-size: 0.627rem;
+  font-weight: 800;
+}
+.section h2 {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.container-img img {
+  width: 100%;
+  margin-top: 5px;
+}
+.Imgmadrid {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.logo {
+  width: 35%;
+}
+
+.paragraphe-logo {
+  font-size: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-style: oblique;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+h1 strong {
+  background-color: #6e2ad4;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+}
+
+.container-video video {
+  width: 100%;
+  margin-top: 10px;
+}
+.nestedCard ul {
+  list-style: initial;
+  margin: initial;
+  padding: 0 0 0 20px;
+}
+
+.nestedCard li {
+  display: list-item;
+}
+.nestedCard {
+  color: white;
+  font-size: 7px;
+}
+div span {
+  position: relative;
+  left: 90px;
+}
+.nestedItems{
+  margin-top: 8px;
+  /* background-color: #110c14; */
+  border-radius: 10px;
+}
+ul b {
+  background-color: #01263a;
+  border-radius: 5px;
+  padding: 0 5px; 
+  font-style: italic;
+}
+.card {
+  font-size: 12px;
+}
+.container-card {
+  background-color: #5c84f4;
+  text-align: center;
+  width: 20%;
+  border-radius: 5px;
+  
+}
+ul em{
+  background-color: #0e0e0e;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+article {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+@keyframes moveBG {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes rotateBG {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes moveLink {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@media (min-width : 768px) {
+   .section h1 {
+     font-size: 1.627rem;
+   }
+   .logo {
+     width: 50%;
+   }
+   .paragraphe-logo {
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}
+@media (min-width : 1200px)
+{
+  .section h1 {
+    font-size: 2.627rem;
+  }
+  .logo {
+     width: 70%;
+   }
+   .paragraphe-logo {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}
