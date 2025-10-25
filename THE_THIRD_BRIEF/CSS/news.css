@@ -44,7 +44,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2vh;
   font-weight: 500;
   font-style: normal;
 }
@@ -118,16 +118,11 @@ body {
   width: 100%;
   height: auto;
 }
-@media (min-width: 1200px) {
-  .prinsipal img {
-    height: 100vh;
-    object-fit: fill;
-  }
-}
 .title {
   color: #d2dabf;
   font-size: small;
   margin-left: 10px;
+  margin-bottom: 1vh;
 }
 .Text {
   color: #bd9bf0;
@@ -136,12 +131,9 @@ body {
   margin-left: 20px;
   width: 90%;
 }
-.section {
-  justify-content: space-around;
-}
 .vedeo img {
   width: 90%;
-  border-radius: 10px;
+  border-radius: 30px;
   border: #270529 solid 5px;
   margin-left: 4%;
 }
@@ -156,7 +148,7 @@ body {
 }
 .p_vedeo {
   font-size: 2vh;
-  color: rgb(79, 144, 200);
+  color: rgb(255, 255, 255);
 }
 .team img {
   margin-top: 5%;
@@ -164,30 +156,56 @@ body {
   width: 100%;
 }
 @media (min-width: 768px) {
+    .prinsipal img {
+    height: 100vh;
+    object-fit: fill;
+  }
   .title {
-    font-size: large;
+    font-size: 2vh;
   }
   .Text {
-    font-size: 15px;
+    font-size: 1.8vh;
   }
   .valorent img {
     margin-top: 10px;
     width: 350px;
   }
+  .follow{
+    display: flex;
+  }
+  .facebook,.instagram,.youtube,.twitter{
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }.section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .valorent img{
+    width: 100%;
+  }
+  .vedeo{
+    width: 200%;
+  }
+  .p_vedeo{
+    font-size: 1.8vh;
+  }
 }
 @media (min-width: 1200px) {
   .title {
-    font-size: 30px;
+    font-size: 4.5vh;
   }
   .Text {
-    font-size: 25px;
+    font-size: 3.5vh;
   }
-  .valorent img {
-    width: 350px;
+  .vedeo{
+    width: 70%;
   }
-
-  .section {
-    display: flex;
+  .valorent img{
+    width: 70%;
+  }
+    .p_vedeo{
+    font-size: 3vh;
   }
 }
 
@@ -249,15 +267,11 @@ body {
 .support {
   text-align: center;
 }
-.support h1 {
-  padding-right: 20%;
-  padding-bottom: 10px;
-}
 input:focus {
   border: 7px solid #40085a;
 }
-
-/* start media  */
+/* end footer */
+/* start media nav */
 @media (max-width: 768px) {
   html {
     overflow-x: hidden !important ;
@@ -295,4 +309,4 @@ input:focus {
     position: static !important;
   }
 }
-/* end media  */
+/* end media nav  */
