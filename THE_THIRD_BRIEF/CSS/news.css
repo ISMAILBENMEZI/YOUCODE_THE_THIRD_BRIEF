@@ -170,6 +170,7 @@ body {
     margin-top: 10px;
     width: 350px;
   }
+  /* start footer media */
   .follow{
     display: flex;
   }
@@ -177,7 +178,9 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-  }.section {
+  }
+  /* end footer media */
+  .section {
     display: flex;
     justify-content: space-between;
   }
