@@ -715,56 +715,58 @@ body {
 .footer_List .footer_links:hover::before {
   filter: blur(1.5rem);
 }
-
+.footer_about p {
+  color: #8a8a8a;
+}
 .footer_List a {
   text-decoration: none;
   color: #fff;
   position: relative;
 }
-.footer .contact_us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.footer_continer
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+.footer_continer h3
+{
+  color: #fff;
+  margin:15px 0;
+  font-size: 18px;
+  border-left: 3px solid #8b5cf6;
+  padding-left: 8px;
+}
+.footer_social a img
+{
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.footer_social a img:hover
+{
+  box-shadow: 0 0 5px 5px #8b5cf6;
+  transform: translateY(-5px);
+}
+.footer_continer a
+{
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer_continer a:hover 
+{
+  color: #8b5cf6;
+}
+.footer_bottom
+{
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #222;
+  font-size: 14px;
+  color: #777;
 }
 
-.support h4 {
-  color: #fff;
-  font-size: 1.5rem;
-}
-.support input {
-  width: 300px;
-  height: 100px;
-  border-radius: 10px;
-  border: 2px solid #6f009b;
-}
-.support button:hover,
-.support input:hover {
-  box-shadow: 0 0 5px 5px #6f009b;
-}
-.follow_us a img
-{
-  transition: all 0.4s ease;
-}
-.follow_us a img:hover {
-  box-shadow: 0 0 5px 5px #6f009b;
-  transform: translateY(-10px);
-}
-.support form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.support button {
-  margin-top: 10px;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 1rem;
-  text-transform: uppercase;
-  background-color: #6f009b;
-  color: #fff;
-}
 /* end footer */
 /* start media  */
 @media (max-width: 768px) {
@@ -834,14 +836,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-
-  .footer .contact_us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -886,13 +880,6 @@ body {
   .article .article_ads {
     gap: 20px;
     padding: 15px;
-  }
-  .footer .contact_us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
   }
 }
 /* end media  */
